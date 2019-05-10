@@ -495,52 +495,52 @@
   陰極射線管顯示器
 "ccmx.use_four_color_matrix_method": |-
   最小化 xy 色度差異
-"*ccss.CCFLFamily_07Feb11": |-
-  LCD CCFL family (AC, EIZO, HP)
-"*ccss.FSI_XM55U_23Jan19": |-
-  WOLED family, SDR Rec. 709 gamut mode (FSI XM55U/XM65U, LG OLED)
+"ccss.CCFLFamily_07Feb11": |-
+  LCD 冷色光管系列 (AC, EIZO, HP)
+"ccss.FSI_XM55U_23Jan19": |-
+  WOLED 系列, SDR Rec. 709 色域模式 (FSI XM55U/XM65U, LG OLED)
 "*ccss.GBrLED_25Jul12": |-
   LCD GB-r-LED IPS (Dell U2413)
-"*ccss.HP_DC3": |-
-  LCD PFS Phosphor WLED IPS, 94% Adobe RGB/90% P3 (HP DreamColor)
-"*ccss.HP_DreamColor_Z24x_NewPanel": |-
-  LCD PFS Phosphor WLED IPS, 98% Adobe RGB/96% P3 (HP DreamColor Z24x G2)
-"*ccss.HP_ZBOOK": |-
-  LCD PFS Phosphor WLED IPS, 100% Adobe RGB (HP ZBook)
-"*ccss.LG OLED 6-Series (i1 Pro 2, ColorMunki Photo)": |-
-  WOLED (LG OLED 6-Series)
-"*ccss.MacBookProRetina2016": |-
-  LCD PFS Phosphor WLED IPS, 99% P3 (MacBook Pro Retina 2016)
+"ccss.HP_DC3": |-
+  LCD PFS 白磷光 LED IPS, 94% Adobe RGB/90% P3 (HP DreamColor)
+"ccss.HP_DreamColor_Z24x_NewPanel": |-
+  LCD PFS 白磷光 LED IPS, 98% Adobe RGB/96% P3 (HP DreamColor Z24x G2)
+"ccss.HP_ZBOOK": |-
+  LCD PFS 白磷光 LED IPS, 100% Adobe RGB (HP ZBook)
+"ccss.LG OLED 6-Series (i1 Pro 2, ColorMunki Photo)": |-
+  WOLED (LG OLED 6-系列)
+"ccss.MacBookProRetina2016": |-
+  LCD PFS 磷光 LED IPS, 99% P3 (MacBook Pro Retina 2016)
 "*ccss.NEC_64_690E_PA242W_2013-02-28": |-
   LCD GB-r-LED IPS (NEC PA242W)
 "*ccss.OLEDFamily_20Jul12": |-
   RGB OLED (Sony PVM-2541)
-"*ccss.OLEDFamily_28Aug18": |-
-  RGB OLED family (Sony PVM-2541, Samsung Galaxy S7, Lenovo LEN4140)
-"*ccss.PFS_Phosphor_Adobe_RGB_31Jan17": |-
-  LCD PFS Phosphor WLED, 98% Adobe RGB
-"*ccss.PFS_Phosphor_Family_31Jan17": |-
-  LCD PFS Phosphor WLED family
-"*ccss.Panasonic VVX17P051J00": |-
-  LCD PFS Phosphor WLED IPS, 94% P3 (Panasonic VVX17P051J00 in Lenovo P70)
-"*ccss.PlasmaFamily_20Jul12": |-
-  Plasma
-"*ccss.ProjectorFamily_07Feb11": |-
-  Projector family (Marantz, HP, Panasonic)
-"*ccss.RGBLEDFamily_07Feb11": |-
-  LCD RGB LED family (HP, SOYO)
-"*ccss.RG_Phosphor_Family_13Dec11": |-
-  LCD RG Phosphor LED family (AUO B156HW01 V.4 in Lenovo W520/W530)
-"*ccss.RG_Phosphor_Family_25Jul12": |-
-  LCD GB-r-LED/RG Phosphor LED family (AUO B156HW01 V.4, Dell U2413)
-"*ccss.Samsung Q9 75_ (i1 Pro)": |-
-  LCD Quantum Dot LED (Samsung QLED Q9)
-"*ccss.WGCCFLFamily_07Feb11": |-
-  LCD CCFL Wide Gamut family (NEC PA241W/PA271W)
-"*ccss.WLEDFamily_07Feb11": |-
-  LCD White LED family (AC, LG, Samsung)
-"*ccss.WRGB_OLED_LG": |-
-  WOLED, SDR Rec. 709 gamut mode (LG OLED B7)
+"ccss.OLEDFamily_28Aug18": |-
+  RGB OLED 系列 (Sony PVM-2541, Samsung Galaxy S7, Lenovo LEN4140)
+"ccss.PFS_Phosphor_Adobe_RGB_31Jan17": |-
+  LCD PFS 白磷光 LED, 98% Adobe RGB
+"ccss.PFS_Phosphor_Family_31Jan17": |-
+  LCD PFS 白磷光 LED 系列
+"ccss.Panasonic VVX17P051J00": |-
+  LCD PFS 白磷光 LED IPS, 94% P3 (Panasonic VVX17P051J00 in Lenovo P70)
+"ccss.PlasmaFamily_20Jul12": |-
+  等離子
+"ccss.ProjectorFamily_07Feb11": |-
+  投影機系列 (Marantz, HP, Panasonic)
+"ccss.RGBLEDFamily_07Feb11": |-
+  LCD RGB LED 系列 (HP, SOYO)
+"ccss.RG_Phosphor_Family_13Dec11": |-
+  LCD RG 磷光 LED 系列 (AUO B156HW01 V.4 in Lenovo W520/W530)
+"ccss.RG_Phosphor_Family_25Jul12": |-
+  LCD GB-r-LED/RG 磷光 LED 系列 (AUO B156HW01 V.4, Dell U2413)
+"ccss.Samsung Q9 75_ (i1 Pro)": |-
+  LCD 量子像點 LED (Samsung QLED Q9)
+"ccss.WGCCFLFamily_07Feb11": |-
+  LCD 冷色光管廣色域系列 (NEC PA241W/PA271W)
+"ccss.WLEDFamily_07Feb11": |-
+  LCD 白光 LED 系列 (AC, LG, Samsung)
+"ccss.WRGB_OLED_LG": |-
+  WOLED, SDR Rec. 709 色域模式 (LG OLED B7)
 "ccxx.ti1": |-
   用於色度計修正的測色板
 "centered": |-
@@ -908,22 +908,22 @@
   DLP Projector RGBW Filter Wheel
 "*display.tech.LCD": |-
   LCD
-"*display.tech.LCD CCFL": |-
-  LCD CCFL
-"*display.tech.LCD CCFL IPS": |-
-  LCD CCFL IPS
-"*display.tech.LCD CCFL TFT": |-
-  LCD CCFL TFT
-"*display.tech.LCD CCFL VPA": |-
-  LCD CCFL PVA
-"*display.tech.LCD CCFL Wide Gamut": |-
-  LCD CCFL Wide Gamut
-"*display.tech.LCD CCFL Wide Gamut IPS": |-
-  LCD CCFL Wide Gamut IPS
-"*display.tech.LCD CCFL Wide Gamut TFT": |-
-  LCD CCFL Wide Gamut TFT
-"*display.tech.LCD CCFL Wide Gamut VPA": |-
-  LCD CCFL Wide Gamut PVA
+"display.tech.LCD CCFL": |-
+  LCD 冷色光管
+"display.tech.LCD CCFL IPS": |-
+  LCD 冷色光管 IPS
+"display.tech.LCD CCFL TFT": |-
+  LCD 冷色光管 TFT
+"display.tech.LCD CCFL VPA": |-
+  LCD 冷色光管 PVA
+"display.tech.LCD CCFL Wide Gamut": |-
+  廣色域 LCD 冷色光管
+"display.tech.LCD CCFL Wide Gamut IPS": |-
+  廣色域 LCD 冷色光管 IPS
+"display.tech.LCD CCFL Wide Gamut TFT": |-
+  廣色域 LCD 冷色光管 TFT
+"display.tech.LCD CCFL Wide Gamut VPA": |-
+  廣色域 LCD 冷色光管 PVA
 "*display.tech.LCD GB-R Phosphor": |-
   LCD GB-r-LED
 "*display.tech.LCD GB-R Phosphor IPS": |-
@@ -932,22 +932,22 @@
   LCD GB-r-LED TFT
 "*display.tech.LCD GB-R Phosphor VPA": |-
   LCD GB-r-LED PVA
-"*display.tech.LCD PFS Phosphor": |-
-  LCD PFS Phosphor WLED
-"*display.tech.LCD PFS Phosphor IPS": |-
-  LCD PFS Phosphor WLED IPS
-"*display.tech.LCD PFS Phosphor TFT": |-
-  LCD PFS Phosphor WLED TFT
-"*display.tech.LCD PFS Phosphor VPA": |-
-  LCD PFS Phosphor WLED PVA
-"*display.tech.LCD RG Phosphor": |-
-  LCD RG Phosphor LED
-"*display.tech.LCD RG Phosphor IPS": |-
-  LCD RG Phosphor LED IPS
-"*display.tech.LCD RG Phosphor TFT": |-
-  LCD RG Phosphor LED TFT
-"*display.tech.LCD RG Phosphor VPA": |-
-  LCD RG Phosphor LED PVA
+"display.tech.LCD PFS Phosphor": |-
+  LCD PFS 白磷光 LED
+"display.tech.LCD PFS Phosphor IPS": |-
+  LCD PFS 白磷光 LED IPS
+"display.tech.LCD PFS Phosphor TFT": |-
+  LCD PFS 白磷光 LED TFT
+"display.tech.LCD PFS Phosphor VPA": |-
+  LCD PFS 白磷光 LED PVA
+"display.tech.LCD RG Phosphor": |-
+  LCD RG 磷光 LED
+"display.tech.LCD RG Phosphor IPS": |-
+  LCD RG 磷光 LED IPS
+"display.tech.LCD RG Phosphor TFT": |-
+  LCD RG 磷光 LED TFT
+"display.tech.LCD RG Phosphor VPA": |-
+  LCD RG 磷光 LED PVA
 "*display.tech.LCD RGB LED": |-
   LCD RGB LED
 "*display.tech.LCD RGB LED IPS": |-
@@ -971,9 +971,9 @@
 "*display.tech.LED WOLED": |-
   WOLED
 "*display.tech.Plasma": |-
-  Plasma
-"*display.tech.Unknown": |-
-  Unknown
+  等離子
+"display.tech.Unknown": |-
+  未知
 "display_detected": |-
   偵測到顯示裝置的設定有所修改。
 "display_device_profile": |-
