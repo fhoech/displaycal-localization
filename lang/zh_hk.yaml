@@ -721,7 +721,7 @@
 "connection.fail": |-
   連線錯誤 (%s)
 "connection.fail.http": |-
-  HTTP 錯誤%s
+  HTTP 錯誤 %s
 "connection.waiting": |-
   正在等待連線於
 "continue": |-
@@ -895,7 +895,7 @@
 "display.settings": |-
   顯示裝置設定
 "display.tech": |-
-  顯示技術
+  顯示器技術
 "*display.tech.CRT": |-
   CRT
 "*display.tech.DLP Projector": |-
@@ -1409,14 +1409,14 @@
   <font weight='bold'>Rendering intent</font>
   If you have calibrated to a different whitepoint than the one mandated by the source colorspace, and want to use that for the 3D LUT instead, select “Relative colorimetric”. Otherwise, select “Absolute colorimetric with white point scaling” (white point scaling will prevent clipping in absolute colorimetric mode that could happen if the source colorspace whitepoint is outside of the display gamut). You also have the option to use a non-colorimetric rendering intent that may compress or expand the source colorspace to fit within the display gamut (not recommended when colorimetric accuracy is required).
 "info.calibration_settings": |-
-  <font weight='bold'>校正</font>是以<font weight='bold'>互動地調校顯示器</font>的方法以達到所選擇的白點及/或亮度，以及選擇性地建立<font weight='bold'>1D 查找表校正曲線</font> (LUT = 查找表)
-  以符合所選的色彩反應曲線及確保灰階的平衡。 注意校正時你只要調校顯示器及跳過 1D 查找表曲線的建立，你需要設定
-  色調響應曲線為 “與測量值相同”。 1D 查找表校正並<font weight='bold'>不可以</font> 用於全顯示器色彩校正，你需要建立 <font weight='bold'>ICC 裝置描述檔</font>或 <font weight='bold'>3D 查找表</font>
-  以及在支援的軟件上使用它們以達到目的。 雖然 1D 查找表校正會完整了建立特性描述和 3D 查找表校正。
+  <font weight='bold'>校正</font>是以<font weight='bold'>互動地調校顯示器</font>的方法以達到所選擇的白點及/或亮度並可選擇性地建立<font weight='bold'>1D 查找表校正曲線</font> (LUT = 查找表)
+  以符合所選的色彩反應曲線及確保灰階的平衡。 注意校正時你只要調校顯示器及跳過建立 1D 查找表曲線，你需要設定
+  色調響應曲線為 “與測量值相同”。 1D 查找表校正並<font weight='bold'>不可以</font> 用於全顯示器色彩校正，你需要建立 <font weight='bold'>ICC 裝置描述檔</font>或
+  <font weight='bold'>3D 查找表</font>以及在支援的軟件上使用它們以達到目的。 雖然 1D 查找表校正會完整地建立特性描述和 3D 查找表校正。
 "info.display_instrument": |-
-  <font weight='bold'>Disable any and all dynamic picture settings of your display</font> if applicable. This can include functions such as dynamic contrast, dimming, automatic brightness and similar features.
+  如有的話請<font weight='bold'>停用顯示器的任何動態圖像設定</font>。 這些功能包括動態對比或亮度，自動亮度控制或類似的功能。
   
-  Make sure light does not shine directly onto the screen of your display.
+  請確保沒有光源直接照射顯示器的螢幕。
   
   如你的顯示器為 <font weight='bold'>OLED</font>、<font weight='bold'>等離子</font>螢幕或擁有因應畫面內容而改變亮度的技術，請啟用<font weight='bold'>白色亮度漂移補償</font>.
   
@@ -1447,8 +1447,8 @@
   Find your monitor/TV and corresponding technology at displayspecifications.com
 "*info.display_tech.linklabel.everymac.com": |-
   Find your iMac/MacBook/iPad and corresponding display technology at everymac.com
-"*info.display_tech.show": |-
-  Show information about common display technologies
+"info.display_tech.show": |-
+  顯示關於常見題示器技術的資訊
 "info.mr_settings": |-
   你可以透過內含關於已測量色塊其色彩錯誤之詳盡統計數據的測量報告，以<font weight='bold'>驗證</font> ICC 描述檔或 3D 查找表的<font weight='bold'>準確度</font> 。
   
@@ -1916,26 +1916,26 @@
   讓作業系統處理和載入顯示器校正(低質素)
 "profile.name": |-
   描述檔名稱
-"*profile.name.placeholders": |-
-  You may use the following placeholders in the profile name:
+"profile.name.placeholders": |-
+  你可以在設定檔名稱使用以下的佔位符號：
   
-  %a	Abbreviated weekday name
-  %A	Full weekday name
-  %b	Abbreviated month name
-  %B	Full month name
-  %d	Day of the month
-  %H	Hour (24-hour clock)
-  %I	Hour (12-hour clock)
-  %j	Day of the year
-  %m	Month
-  %M	Minute
+  %a	星期簡稱
+  %A	星期全名
+  %b	月份簡稱
+  %B	月份全名
+  %d	月份日子
+  %H	小時 (24小時制)
+  %I	小時 (12小時制)
+  %j	全年日子
+  %m	月份
+  %M	分鐘
   %p	AM/PM
-  %S	Second
-  %U	Week (Sunday as first day of the week)
-  %w	Weekday (sunday is 0)
-  %W	Week (Monday as first day of the week)
-  %y	Year without century
-  %Y	Year with century
+  %S	秒數
+  %U	週數 (星期日為每週首日)
+  %w	週數 (星期日為 0)
+  %W	週數 (星期一為每週首日)
+  %y	年份不包含年代
+  %Y	年份包含年代
 "profile.no_embedded_ti3": |-
   該描述檔不包含 Argyll 兼容的測量數據。
 "profile.no_vcgt": |-
@@ -2525,14 +2525,14 @@
   用於 eeColor 的視訊 3D 查找表 (D65, Rec. 709 / Rec. 1886)
 "video_madVR.icc": |-
   用於 madVR 的視訊 3D 查找表 (D65, Rec. 709 / Rec. 1886)
-"*video_madVR_ST2084.icc": |-
-  Video 3D LUT for madVR HDR (D65, Rec. 2020 / SMPTE 2084 / BT.2390)
+"video_madVR_ST2084.icc": |-
+  用於 madVR HDR 的視訊 3D 查找表 (D65, Rec. 2020 / SMPTE 2084 / BT.2390)
 "video_monitor": |-
   視訊顯示器
 "video_resolve.icc": |-
   用於 Reslove 的視訊 3D 查找表 (D65, Rec. 709 / Rec. 1886)
-"*video_resolve_ST2084_clip.icc": |-
-  Video 3D LUT for Resolve HDR (D65, Rec. 2020 / SMPTE 2084)
+"video_resolve_ST2084_clip.icc": |-
+  用於 Resolve HDR 的視訊 3D 查找表 (D65, Rec. 2020 / SMPTE 2084)
 "view.3d": |-
   以 3D 檢視
 "viewing_conditions": |-
@@ -2614,7 +2614,7 @@
 "windows.version.unsupported": |-
   不支援這個版本的 Windows。
 "windows_only": |-
-  只可在 Windows 執行
+  只適用於 Windows
 "working_dir": |-
   工作資料夾：
 "*xyz_scaling": |-
