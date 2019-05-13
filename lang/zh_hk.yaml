@@ -131,9 +131,9 @@
 "*FograStrip3.ti1": |-
   Fogra Media Wedge CMYK V3.0
 "ISO_12646-2008_color_accuracy_and_gray_balance.ti1": |-
-  ISO 12646:2008 色彩準確度及灰平衡
+  ISO 12646:2008 色彩精確度及灰平衡
 "ISO_14861_color_accuracy_RGB318.ti1": |-
-  ISO 14861:2015 色彩準確度及灰平衡
+  ISO 14861:2015 色彩精確度及灰平衡
 "*QPcard_201.cie": |-
   QPcard 201
 "*QPcard_202.cie": |-
@@ -290,7 +290,7 @@
 "black_point_compensation.3dlut.warning": |-
   當建立 3D 查找表時，應該先關閉分析設定中的黑位補償功能，因為會影響色調曲線調整的功能。你是否想關閉黑位補償？
 "black_point_compensation.info": |-
-  黑位補償有效防止黑位被壓縮，但會降低色彩轉換的準確度。
+  黑位補償有效防止黑位被壓縮，但會降低色彩轉換的精確度。
 "black_white": |-
   黑白
 "black_xyz": |-
@@ -480,7 +480,7 @@
 "calibration_profiling.complete": |-
   已完成校正和分析！
 "calibrationloader.description": |-
-  為所有已設定的顯示裝置設定ICC描述檔及載入校正曲線
+  為所有已設定的顯示裝置設定 ICC 描述檔及載入校正曲線
 "can_be_used_independently": |-
   可獨立使用
 "cancel": |-
@@ -612,7 +612,7 @@
 "chromaticity_illuminant_relative": |-
   色度 (相對於光源)
 "chromecast_limitations_warning": |-
-  請注意 Chromecast 的準確度不及直接連接的顯示器或 madTPG，原因是 Chromecast 採用 RGB 至 YCbCr 轉換和放大。
+  請注意 Chromecast 的精確度不及直接連接的顯示器或 madTPG，原因是 Chromecast 採用 RGB 至 YCbCr 轉換和放大。
 "*cie2012_2": |-
   CIE 2012 2°
 "clear": |-
@@ -896,17 +896,17 @@
   顯示裝置設定
 "display.tech": |-
   顯示器技術
-"*display.tech.CRT": |-
-  CRT
-"*display.tech.DLP Projector": |-
-  DLP Projector
-"*display.tech.DLP Projector RGB Filter Wheel": |-
-  DLP Projector RGB Filter Wheel
-"*display.tech.DLP Projector RGBCMY Filter Wheel": |-
-  DLP Projector RGBCMY Filter Wheel
-"*display.tech.DPL Projector RGBW Filter Wheel": |-
-  DLP Projector RGBW Filter Wheel
-"*display.tech.LCD": |-
+"display.tech.CRT": |-
+  陰極射線管
+"display.tech.DLP Projector": |-
+  DLP 投影機
+"display.tech.DLP Projector RGB Filter Wheel": |-
+  DLP 投影機 RGB 濾光輪盤
+"display.tech.DLP Projector RGBCMY Filter Wheel": |-
+  DLP 投影機 RGBCMY 濾光輪盤
+"display.tech.DPL Projector RGBW Filter Wheel": |-
+  DLP 投影機 RGBW 濾光輪盤
+"display.tech.LCD": |-
   LCD
 "display.tech.LCD CCFL": |-
   LCD 冷色光管
@@ -956,21 +956,21 @@
   LCD RGB LED TFT
 "*display.tech.LCD RGB LED VPA": |-
   LCD RGB LED PVA
-"*display.tech.LCD White LED": |-
-  LCD White LED
-"*display.tech.LCD White LED IPS": |-
-  LCD White LED IPS
-"*display.tech.LCD White LED TFT": |-
-  LCD White LED TFT
-"*display.tech.LCD White LED VPA": |-
-  LCD White LED PVA
+"display.tech.LCD White LED": |-
+  LCD 白光 LED
+"display.tech.LCD White LED IPS": |-
+  LCD 白光 LED IPS
+"display.tech.LCD White LED TFT": |-
+  LCD 白光 LED TFT
+"display.tech.LCD White LED VPA": |-
+  LCD 白光 LED PVA
 "*display.tech.LED AMOLED": |-
   AMOLED
 "*display.tech.LED OLED": |-
   OLED
-"*display.tech.LED WOLED": |-
-  WOLED
-"*display.tech.Plasma": |-
+"display.tech.LED WOLED": |-
+  白光 OLED
+"display.tech.Plasma": |-
   等離子
 "display.tech.Unknown": |-
   未知
@@ -1164,11 +1164,11 @@
   The integrity of %s cannot be verified because the checksum file is malformed.
 "*file.hash.missing": |-
   The integrity of %s cannot be verified because it doesn't have an entry in the checksum file.
-"*file.hash.verification.fail": |-
-  Checksum verification failed for %s:
+"file.hash.verification.fail": |-
+  %s 的校驗碼驗證失敗:
   
-  Expected %s
-  Actual %s
+  預期是 %s
+  實際是 %s
 "file.invalid": |-
   無的效的檔案。
 "file.missing": |-
@@ -1450,7 +1450,7 @@
 "info.display_tech.show": |-
   顯示關於常見題示器技術的資訊
 "info.mr_settings": |-
-  你可以透過內含關於已測量色塊其色彩錯誤之詳盡統計數據的測量報告，以<font weight='bold'>驗證</font> ICC 描述檔或 3D 查找表的<font weight='bold'>準確度</font> 。
+  你可以透過內含關於已測量色塊其色彩錯誤之詳盡統計數據的測量報告，以<font weight='bold'>驗證</font> ICC 描述檔或 3D 查找表的<font weight='bold'>精確度</font> 。
   
   當驗證 3D 查找表時，請確保使用與建立 3D 查找表時的相同設定值。
   
@@ -1601,8 +1601,8 @@
   測量測色板
 "measureframe.center": |-
   中央
-"*measureframe.center.manual": |-
-  Please place this window in the center of the screen
+"measureframe.center.manual": |-
+  請將此視窗置於螢幕中央
 "measureframe.info": |-
   請將測量視窗移到屏幕上你所想的位置，以及在有需要時改變其大小。大概整個視窗範圍都會用來顯示測試的色板，視窗上的圓圈是用來輔助你正確放置測量儀器的導引標示。
   請將測量儀器放置在該視窗上然後按 “開始測量”。你可以關閉測量視窗以取消並返回主視窗。
@@ -1661,9 +1661,9 @@
 "measurement_mode.lcd.wide_gamut.gb_led": |-
   廣色域 LCD (GB LED)
 "measurement_mode.lcd.wide_gamut.led": |-
-  廣色域 LCD (PFS Phosphor, RGB LED)
+  廣色域 LCD (PFS 磷光, 三原色 LED)
 "measurement_mode.lcd.wide_gamut.rgb_led": |-
-  廣色域 LCD (RGB LED)
+  廣色域 LCD (三原色 LED)
 "measurement_mode.raw": |-
   原始
 "measurement_mode.refresh": |-
@@ -2095,10 +2095,10 @@
   紅色 XYZ
 "reference": |-
   參考
-"*reflection_hardcopy_original_colorimetry": |-
-  Reflection hardcopy original colorimetry
-"*reflection_print_output_colorimetry": |-
-  Reflection print output colorimetry
+"reflection_hardcopy_original_colorimetry": |-
+  反光硬本原始色度
+"reflection_print_output_colorimetry": |-
+  反光印刷品輸出色度
 "reflective": |-
   反光
 "reflective_scanner": |-
@@ -2553,8 +2553,8 @@
   你是否真的要捨棄目前的設定值？
 "warning.gamap.out_viewcond.nondisplay": |-
   目的觀看環境 “%s” 並不是顯示螢幕的觀看環境。你決定還要用這個嗎？
-"*warning.input_value_clipping": |-
-  Warning: Values below the display profile blackpoint will be clipped!
+"warning.input_value_clipping": |-
+  警告：低於顯示設定檔黑點的數值會成為全黑！
 "*warning.suspicious_delta_e": |-
   Warning: Suspicious measurements have been found. Please note this check assumes an sRGB-like display device. If your display device differs from this assumption (e.g. if it has a very wide gamut or a tone response too far from sRGB), then errors found are probably not meaningful.
   
