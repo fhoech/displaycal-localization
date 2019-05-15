@@ -38,8 +38,8 @@
   TV Rec. 601 YCbCr SD
 "*3dlut.encoding.type_7": |-
   TV Rec. 709 1125/60Hz YCbCr HD
-"*3dlut.encoding.type_C": |-
-  TV Rec. 2020 Constant Luminance YCbCr UHD
+"3dlut.encoding.type_C": |-
+  TV Rec. 2020 恆定亮度 YCbCr UHD
 "*3dlut.encoding.type_T": |-
   TV RGB 16-235 (clip WTW)
 "*3dlut.encoding.type_X": |-
@@ -48,8 +48,8 @@
   全範圍 RGB 0-255
 "*3dlut.encoding.type_t": |-
   TV RGB 16-235
-"*3dlut.encoding.type_x": |-
-  TV xvYCC Rec. 601 YCbCr (Rec. 709 Primaries) SD
+"3dlut.encoding.type_x": |-
+  TV xvYCC Rec. 601 YCbCr (Rec. 709 原色) SD
 "3dlut.format": |-
   3D 查找表檔案格式
 "*3dlut.format.3dl": |-
@@ -159,7 +159,7 @@
 "add": |-
   加入...
 "adjust_rolloff": |-
-  調校 roll-off
+  調校衰減
 "advanced": |-
   進階
 "allow_skip_sensor_cal": |-
@@ -313,8 +313,8 @@
   藍色色調響應曲線
 "blue_xyz": |-
   藍色 XYZ
-"*bradford": |-
-  Bradford (ICC recommendation)
+"bradford": |-
+  Bradford (ICC 建議)
 "brightness": |-
   亮度
 "browse": |-
@@ -359,8 +359,8 @@
   已完成校正!
 "calibration.create_fast_matrix_shaper": |-
   建立矩陣描述檔
-"*calibration.create_fast_matrix_shaper_choice": |-
-  Do you want to create a fast matrix shaper profile from calibration measurements or just calibrate?
+"calibration.create_fast_matrix_shaper_choice": |-
+  你是否想使用校正的測量數據來建立快速矩陣成形器設定檔，還是只進行校正？
 "calibration.do_not_use_video_lut": |-
   不要使用顯卡伽瑪表來套用校正
 "calibration.do_not_use_video_lut.warning": |-
@@ -502,15 +502,15 @@
 "*ccss.GBrLED_25Jul12": |-
   LCD GB-r-LED IPS (Dell U2413)
 "ccss.HP_DC3": |-
-  LCD PFS 白磷光 LED IPS, 94% Adobe RGB/90% P3 (HP DreamColor)
+  LCD PFS 磷光體白光 LED IPS, 94% Adobe RGB/90% P3 (HP DreamColor)
 "ccss.HP_DreamColor_Z24x_NewPanel": |-
-  LCD PFS 白磷光 LED IPS, 98% Adobe RGB/96% P3 (HP DreamColor Z24x G2)
+  LCD PFS 磷光體白光 LED IPS, 98% Adobe RGB/96% P3 (HP DreamColor Z24x G2)
 "ccss.HP_ZBOOK": |-
-  LCD PFS 白磷光 LED IPS, 100% Adobe RGB (HP ZBook)
+  LCD PFS 磷光體白光 LED IPS, 100% Adobe RGB (HP ZBook)
 "ccss.LG OLED 6-Series (i1 Pro 2, ColorMunki Photo)": |-
   WOLED (LG OLED 6-系列)
 "ccss.MacBookProRetina2016": |-
-  LCD PFS 磷光 LED IPS, 99% P3 (MacBook Pro Retina 2016)
+  LCD PFS 磷光體 LED IPS, 99% P3 (MacBook Pro Retina 2016)
 "*ccss.NEC_64_690E_PA242W_2013-02-28": |-
   LCD GB-r-LED IPS (NEC PA242W)
 "*ccss.OLEDFamily_20Jul12": |-
@@ -518,21 +518,21 @@
 "ccss.OLEDFamily_28Aug18": |-
   RGB OLED 系列 (Sony PVM-2541, Samsung Galaxy S7, Lenovo LEN4140)
 "ccss.PFS_Phosphor_Adobe_RGB_31Jan17": |-
-  LCD PFS 白磷光 LED, 98% Adobe RGB
+  LCD PFS 磷光體白光 LED, 98% Adobe RGB
 "ccss.PFS_Phosphor_Family_31Jan17": |-
-  LCD PFS 白磷光 LED 系列
+  LCD PFS 磷光體白光 LED 系列
 "ccss.Panasonic VVX17P051J00": |-
-  LCD PFS 白磷光 LED IPS, 94% P3 (Panasonic VVX17P051J00 in Lenovo P70)
+  LCD PFS 磷光體白光 LED IPS, 94% P3 (Panasonic VVX17P051J00 in Lenovo P70)
 "ccss.PlasmaFamily_20Jul12": |-
   等離子
 "ccss.ProjectorFamily_07Feb11": |-
   投影機系列 (Marantz, HP, Panasonic)
 "ccss.RGBLEDFamily_07Feb11": |-
-  LCD RGB LED 系列 (HP, SOYO)
+  LCD 三原色 LED 系列 (HP, SOYO)
 "ccss.RG_Phosphor_Family_13Dec11": |-
-  LCD RG 磷光 LED 系列 (AUO B156HW01 V.4 in Lenovo W520/W530)
+  LCD RG 磷光體 LED 系列 (AUO B156HW01 V.4 in Lenovo W520/W530)
 "ccss.RG_Phosphor_Family_25Jul12": |-
-  LCD GB-r-LED/RG 磷光 LED 系列 (AUO B156HW01 V.4, Dell U2413)
+  LCD GB-r-LED/RG 磷光體 LED 系列 (AUO B156HW01 V.4, Dell U2413)
 "ccss.Samsung Q9 75_ (i1 Pro)": |-
   LCD 量子像點 LED (Samsung QLED Q9)
 "ccss.WGCCFLFamily_07Feb11": |-
@@ -901,11 +901,11 @@
 "display.tech.DLP Projector": |-
   DLP 投影機
 "display.tech.DLP Projector RGB Filter Wheel": |-
-  DLP 投影機 RGB 濾光輪盤
+  DLP 投影機 RGB 濾色輪
 "display.tech.DLP Projector RGBCMY Filter Wheel": |-
-  DLP 投影機 RGBCMY 濾光輪盤
+  DLP 投影機 RGBCMY 濾色輪
 "display.tech.DPL Projector RGBW Filter Wheel": |-
-  DLP 投影機 RGBW 濾光輪盤
+  DLP 投影機 RGBW 濾色輪
 "display.tech.LCD": |-
   LCD
 "display.tech.LCD CCFL": |-
@@ -933,21 +933,21 @@
 "*display.tech.LCD GB-R Phosphor VPA": |-
   LCD GB-r-LED PVA
 "display.tech.LCD PFS Phosphor": |-
-  LCD PFS 白磷光 LED
+  LCD PFS 磷光體白光 LED
 "display.tech.LCD PFS Phosphor IPS": |-
-  LCD PFS 白磷光 LED IPS
+  LCD PFS 磷光體白光 LED IPS
 "display.tech.LCD PFS Phosphor TFT": |-
-  LCD PFS 白磷光 LED TFT
+  LCD PFS 磷光體白光 LED TFT
 "display.tech.LCD PFS Phosphor VPA": |-
-  LCD PFS 白磷光 LED PVA
+  LCD PFS 磷光體白光 LED PVA
 "display.tech.LCD RG Phosphor": |-
-  LCD RG 磷光 LED
+  LCD RG 磷光體 LED
 "display.tech.LCD RG Phosphor IPS": |-
-  LCD RG 磷光 LED IPS
+  LCD RG 磷光體 LED IPS
 "display.tech.LCD RG Phosphor TFT": |-
-  LCD RG 磷光 LED TFT
+  LCD RG 磷光體 LED TFT
 "display.tech.LCD RG Phosphor VPA": |-
-  LCD RG 磷光 LED PVA
+  LCD RG 磷光體 LED PVA
 "*display.tech.LCD RGB LED": |-
   LCD RGB LED
 "*display.tech.LCD RGB LED IPS": |-
@@ -1661,7 +1661,7 @@
 "measurement_mode.lcd.wide_gamut.gb_led": |-
   廣色域 LCD (GB LED)
 "measurement_mode.lcd.wide_gamut.led": |-
-  廣色域 LCD (PFS 磷光, 三原色 LED)
+  廣色域 LCD (PFS 磷光體, 三原色 LED)
 "measurement_mode.lcd.wide_gamut.rgb_led": |-
   廣色域 LCD (三原色 LED)
 "measurement_mode.raw": |-
