@@ -648,8 +648,8 @@
   另外你還可以按下 “瀏覽...” 來選擇已有的測量值。.
 "colorimeter_correction.create.success": |-
   已成功建立修正檔。
-"*colorimeter_correction.create.warning": |-
-  Make sure to measure your display device in its native gamut and do not artificially restrict it (via emulation modes or similar means) when creating a colorimeter correction.
+"colorimeter_correction.create.warning": |-
+  當建立色度計修正時請確保在量度顯示裝置的原始色域而並非人嘅為地對其色域作出限制 (透過模擬模式或類似的方式)。
 "colorimeter_correction.file.none": |-
   無
 "colorimeter_correction.import": |-
@@ -664,8 +664,8 @@
   已成功由以下軟件匯入色度計修正：
   
   %s
-"*colorimeter_correction.info": |-
-  Colorimeter correction information
+"colorimeter_correction.info": |-
+  色度計修正資訊
 "colorimeter_correction.instrument_mismatch": |-
   所選的色度計修正並不適用於所選的儀器。
 "colorimeter_correction.upload": |-
