@@ -1491,8 +1491,8 @@
   只安裝給目前的使用者
 "instrument": |-
   測量儀器
-"instrument.calibrate": |-
-  將測量儀器放置在深色、磨沙的表面，又或者放在其附帶的校正板上，然後按確定以校正測量儀器。
+"*instrument.calibrate": |-
+  Place light-tight cap on the instrument (if applicable), or place on a dark, matte surface, or onto its calibration reference (if applicable), and press OK to calibrate the instrument.
 "instrument.calibrate.colormunki": |-
   設定 ColorMunki 感度器到校正位置然後按 OK 以校正測量儀器。
 "instrument.calibrate.reflective": |-
@@ -1549,6 +1549,8 @@
   亮度
 "lut_access": |-
   顯示卡伽瑪轉換表存取
+"*lut_access.unsupported": |-
+  Your graphics drivers or hardware do not support loadable gamma ramps or calibration. You may need to update your device drivers.
 "*macos.bugs.cal.warning": |-
   Applications using the Apple CMM (color management module), like macOS Preview and QuickLook, do not support calibration black point hue correction.
   Applications that use their own color management are not affected (like Adobe Creative Suite using Adobe ACE, or open source graphics applications using littleCMS like GIMP or Krita, or applications employing 3D LUTs for color management).
