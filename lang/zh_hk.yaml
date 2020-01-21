@@ -101,7 +101,7 @@
 "3dlut.install.unsupported": |-
   3D 查找表安裝程序不支援所選取的 3D 查找表格式。
 "*3dlut.madvr.colorspace.unsupported": |-
-  The source colorspace %s with the primary chromaticity xy coordinates red %.4f %.4f, green %.4f %.4f, blue %.4f %.4f is not supported by madVR for automatic installation. Please assign the 3D LUT manually in madVR.
+  madVR 並未支援自動安裝原始色域 %s 的主色度 xy 座標紅色 %.4f %.4f，綠色 %.4f %.4f，藍色 %.4f %.4f。請於 madVR 中手動指定其 3D 查找表。
 "3dlut.save_as": |-
   儲存 3D 查找表為...
 "3dlut.settings": |-
@@ -261,8 +261,8 @@
   ArgyllCMS 測量儀器驅動程式解除安裝失敗。
 "argyll.instrument.drivers.uninstall.success": |-
   成功解除安裝 ArgyllCMS 測量儀器驅動程式。
-"*argyll.malformed_ccxx": |-
-  ArgyllCMS cannot function as long as malformed colorimeter correction files are present. They will be automatically moved to the trash.
+"argyll.malformed_ccxx": |-
+  ArgyllCMS 不能於不正常的色度計修正檔存在的情況下正常運作。這些檔案將會移至回收筒。
 "argyll.util.not_found": |-
   未能找到 ArgyllCMS “%s” 的執行檔！
 "as_measured": |-
@@ -888,12 +888,12 @@
   顯示裝置及測量儀器
 "display.connection.type": |-
   連接方式
-"*display.levels_issue_detected": |-
-  The measured luminance difference between RGB level 0 and 16 is below 0.02 cd/m², indicating clipping. Likely either the display device's input- and/or black level setting is incorrect, and/or the output levels configuration of the graphics driver is wrong.
+"display.levels_issue_detected": |-
+  測量到 RGB 水平 0 至 16 之間的亮度差距少於 0.02 cd/m²，表示可能出現裁斷。有可能你的顯示裝置輸入及/或黑位水平設定不正確，及/或顯示卡驅動程式的輸出水平設定不正確。
   
-  If your display device has a setting for input levels, please set it to full range RGB (0-255). If your display device doesn't have such a setting, set your graphics driver to output limited range (16-235) instead. Select “Retry” after making either change.
+  如你的顯示裝置有輸入水平設定的話，請將其設定為全域 RGB (0-255)。如你的顯示裝置沒有相關的設的，請設定你的顯示卡驅動程式的輸出水平設定為有限範圍 (16-255)。在進行相關設定後選取 “重試”。
   
-  If neither your display nor graphics driver has a range setting, you can also fix the output levels using the video card gamma table by clicking “Continue”, but note that this is the least preferable solution.
+  如你的顯示裝置或顯示卡驅動程式都沒有輸出水平可以的設定，你可以選取 “繼續” 以顯示卡的伽瑪表進行修正，但要注意這是最不建議的解決方法。
 "display.manufacturer": |-
   顯示裝置製造商
 "display.output": |-
@@ -1118,8 +1118,8 @@
   測量到的最高亮度為無效的。請確保儀器上的感應器沒有被阻擋，並移除任何保護蓋 (如有)。
 "*error.luminance.not_monotonically_increasing": |-
   The measured luminance response is highly non-monotonic (device or instrument fault). Cannot generate tone response curves.
-"*error.malformed_cgats": |-
-  The %s file “%s” is malformed.
+"error.malformed_cgats": |-
+  %s 檔案 “%s” 的內容是不正常的。
 "error.measurement.file_invalid": |-
   測量檔案 “%s” 為無效的。
 "error.measurement.file_missing": |-
@@ -1143,7 +1143,7 @@
 "error.source_dest_same": |-
   來源和目標檔案是相同的。
 "*error.spyderx.black_cal_offsets_too_high": |-
-  The instrument self-calibration offsets are too high. Make sure no light shines on the sensor during instrument self-calibration (put the cap on tightly).
+  測量儀器的自我校正偏移值過高。請確保測量儀器在自我校正時沒有被光直接照射 (將蓋掩蓋緊)。
 "error.testchart.creation_failed": |-
   測色板檔案 “%s” 未能建立。可能有存取限制，或來源檔案並不存在。
 "error.testchart.invalid": |-
@@ -1245,8 +1245,8 @@
   菲林寫入器
 "finish": |-
   完成
-"*fix_output_levels_using_vcgt": |-
-  Fix output levels using video card gamma table
+"fix_output_levels_using_vcgt": |-
+  以顯示卡伽瑪表修正輸出水平
 "*flare": |-
   Flare
 "flexography": |-
@@ -1507,8 +1507,8 @@
   只安裝給目前的使用者
 "instrument": |-
   測量儀器
-"*instrument.calibrate": |-
-  Place light-tight cap on the instrument (if applicable), or place on a dark, matte surface, or onto its calibration reference (if applicable), and press OK to self-calibrate the instrument.
+"instrument.calibrate": |-
+  請在測量儀器上裝上防漏光蓋掩（如有），或將其放置在黑色不反光的表面上，或者放在校正參考表面上（如有），然後按確認開始測量儀器的自我校正。
 "instrument.calibrate.colormunki": |-
   設定 ColorMunki 感度器到校正位置然後按 OK 以校正測量儀器。
 "instrument.calibrate.reflective": |-
@@ -2153,8 +2153,8 @@
   來自 %s 的無效回應： 機碼的數值 “%s” 並不符合預期的數值 “%s”：%s
 "restore_defaults": |-
   還原到預設值
-"*retry": |-
-  Retry
+"retry": |-
+  重試
 "rgb.trc": |-
   RGB 傳遞函數
 "rgb.trc.averaged": |-
@@ -2182,7 +2182,7 @@
 "self_check_report": |-
   自我檢查報告...
 "serial_number": |-
-  序列號
+  序號
 "set_as_default": |-
   設定為預設
 "setting.keep_current": |-
