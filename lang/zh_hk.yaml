@@ -101,7 +101,7 @@
 "3dlut.install.unsupported": |-
   3D 查找表安裝程序不支援所選取的 3D 查找表格式。
 "*3dlut.madvr.colorspace.unsupported": |-
-  The source colorspace %s with the primary chromaticity xy coordinates red %.4f %.4f, green %.4f %.4f, blue %.4f %.4f is not supported by madVR for automatic installation. Please assign the 3D LUT manually in madVR.
+  madVR 並未支援自動安裝原始色域 %s 的主色度 xy 座標紅色 %.4f %.4f，綠色 %.4f %.4f，藍色 %.4f %.4f。請於 madVR 中手動指定其 3D 查找表。
 "3dlut.save_as": |-
   儲存 3D 查找表為...
 "3dlut.settings": |-
@@ -261,8 +261,8 @@
   ArgyllCMS 測量儀器驅動程式解除安裝失敗。
 "argyll.instrument.drivers.uninstall.success": |-
   成功解除安裝 ArgyllCMS 測量儀器驅動程式。
-"*argyll.malformed_ccxx": |-
-  ArgyllCMS cannot function as long as malformed colorimeter correction files are present. They will be automatically moved to the trash.
+"argyll.malformed_ccxx": |-
+  ArgyllCMS 不能於不正常的色度計修正檔存在的情況下正常運作。這些檔案將會移至回收筒。
 "argyll.util.not_found": |-
   未能找到 ArgyllCMS “%s” 的執行檔！
 "as_measured": |-
@@ -652,8 +652,8 @@
   另外你還可以按下 “瀏覽...” 來選擇已有的測量值。.
 "colorimeter_correction.create.success": |-
   已成功建立修正檔。
-"*colorimeter_correction.create.warning": |-
-  Make sure to measure your display device in its native gamut and do not artificially restrict it (via emulation modes or similar means) when creating a colorimeter correction.
+"colorimeter_correction.create.warning": |-
+  當建立色度計修正時請確保在量度顯示裝置的原始色域而並非人嘅為地對其色域作出限制 (透過模擬模式或類似的方式)。
 "colorimeter_correction.file.none": |-
   無
 "colorimeter_correction.import": |-
@@ -668,8 +668,8 @@
   已成功由以下軟件匯入色度計修正：
   
   %s
-"*colorimeter_correction.info": |-
-  Colorimeter correction information
+"colorimeter_correction.info": |-
+  色度計修正資訊
 "colorimeter_correction.instrument_mismatch": |-
   所選的色度計修正並不適用於所選的儀器。
 "colorimeter_correction.upload": |-
@@ -690,8 +690,8 @@
   已找到以下用於所選顯示器及儀器的色度計修正：
 "colorimeter_correction.web_check.failure": |-
   找不到用於所選顯示器及儀器的色度計修正。
-"*colorimeter_correction.web_check.info": |-
-  Please note that all colorimeter corrections have been contributed by various users, and their usefulness to your particular situation is up to you to evaluate. They may or may not improve the absolute accuracy of your colorimeter with your display.
+"colorimeter_correction.web_check.info": |-
+  請注意所有色度計的修正為不同用戶所提供，閣下需根據你的情況自行判斷其有用性。其可能會或可能不會增強色度計對於你的顯示器之絕對精準度。
 "colorimeter_correction_matrix_file": |-
   修正
 "colorimeter_correction_matrix_file.choose": |-
@@ -888,12 +888,12 @@
   顯示裝置及測量儀器
 "display.connection.type": |-
   連接方式
-"*display.levels_issue_detected": |-
-  The measured luminance difference between RGB level 0 and 16 is below 0.02 cd/m², indicating clipping. Likely either the display device's input- and/or black level setting is incorrect, and/or the output levels configuration of the graphics driver is wrong.
+"display.levels_issue_detected": |-
+  測量到 RGB 水平 0 至 16 之間的亮度差距少於 0.02 cd/m²，顯示有可能出現裁斷。有可能你的顯示裝置輸入及/或黑位水平設定不正確，及/或顯示卡驅動程式的輸出水平設定不正確。
   
-  If your display device has a setting for input levels, please set it to full range RGB (0-255). If your display device doesn't have such a setting, set your graphics driver to output limited range (16-235) instead. Select “Retry” after making either change.
+  如你的顯示裝置有輸入水平設定的話，請將其設定為全範圍 RGB (0-255)。如你的顯示裝置沒有相關的設的，請設定你的顯示卡驅動程式的輸出水平設定為有限範圍 (16-255)。在進行相關設定後選取 “重試”。
   
-  If neither your display nor graphics driver has a range setting, you can also fix the output levels using the video card gamma table by clicking “Continue”, but note that this is the least preferable solution.
+  如你的顯示裝置或顯示卡驅動程式都沒有輸出水平可以的設定，你可以選取 “繼續” 以顯示卡的伽瑪表進行修正，但要注意這是最不建議的解決方法。
 "display.manufacturer": |-
   顯示裝置製造商
 "display.output": |-
@@ -1118,8 +1118,8 @@
   測量到的最高亮度為無效的。請確保儀器上的感應器沒有被阻擋，並移除任何保護蓋 (如有)。
 "*error.luminance.not_monotonically_increasing": |-
   The measured luminance response is highly non-monotonic (device or instrument fault). Cannot generate tone response curves.
-"*error.malformed_cgats": |-
-  The %s file “%s” is malformed.
+"error.malformed_cgats": |-
+  %s 檔案 “%s” 的內容是不正常的。
 "error.measurement.file_invalid": |-
   測量檔案 “%s” 為無效的。
 "error.measurement.file_missing": |-
@@ -1143,7 +1143,7 @@
 "error.source_dest_same": |-
   來源和目標檔案是相同的。
 "*error.spyderx.black_cal_offsets_too_high": |-
-  The instrument self-calibration offsets are too high. Make sure no light shines on the sensor during instrument self-calibration (put the cap on tightly).
+  測量儀器的自我校正偏移值過高。請確保測量儀器在自我校正時沒有被光直接照射 (將蓋掩蓋緊)。
 "error.testchart.creation_failed": |-
   測色板檔案 “%s” 未能建立。可能有存取限制，或來源檔案並不存在。
 "error.testchart.invalid": |-
@@ -1177,9 +1177,9 @@
 "*ffp_insertion": |-
   Full field pattern insertion
 "*file.hash.malformed": |-
-  The integrity of %s cannot be verified because the checksum file is malformed.
+  因校驗檔不正常而無法驗證 %s 的完整性。
 "*file.hash.missing": |-
-  The integrity of %s cannot be verified because it doesn't have an entry in the checksum file.
+  因校驗檔中並沒有 %s 的相關記錄而無法驗證其完整性。
 "file.hash.verification.fail": |-
   %s 的校驗碼驗證失敗:
   
@@ -1231,8 +1231,8 @@
   測量檔案 (*.ti3)
 "filetype.tif": |-
   標籤圖檔格式 (*.tif)
-"*filetype.txt": |-
-  DeviceCorrections.txt
+"filetype.txt": |-
+  裝置修正.txt
 "filetype.vrml": |-
   VRML 檔案 (*.wrl)
 "filetype.x3d": |-
@@ -1245,10 +1245,10 @@
   菲林寫入器
 "finish": |-
   完成
-"*fix_output_levels_using_vcgt": |-
-  Fix output levels using video card gamma table
-"*flare": |-
-  Flare
+"fix_output_levels_using_vcgt": |-
+  以顯示卡伽瑪表修正輸出水平
+"flare": |-
+  耀光
 "flexography": |-
   柔印
 "*focal_plane_colorimetry_estimates": |-
@@ -1336,8 +1336,8 @@
   PCS-至-裝置
 "gamut_mapping.mode.inverse_a2b": |-
   反向 裝置-至-PCS
-"*gamut_plot.tooltip": |-
-  Click and drag the mouse inside the plot to move the viewport, or zoom with the mouse wheel and +/- keys. Double-click resets the viewport.
+"gamut_plot.tooltip": |-
+  在圖表上點擊及拖動滑鼠以移動視角，或可用滑鼠滾輪和 +/- 鍵放大縮小。雙按可重新設定為預設視角。
 "generic_name_value_data": |-
   一般名稱值數據
 "geometry": |-
@@ -1348,8 +1348,8 @@
   去到 %s
 "go_to_website": |-
   瀏覽網站
-"*gravure": |-
-  Gravure
+"gravure": |-
+  凹版印刷
 "gray_tone_response_curve": |-
   灰色調響應曲線
 "grayscale": |-
@@ -1461,10 +1461,10 @@
   <font weight='bold'>LCD RGB LED</font> has a wide color gamut with near-full Adobe RGB coverage. Common displays in this category include Samsung XL20/XL24/XL30 and HP DreamColor LP2480zx.
   
   <font weight='bold'>LCD CCFL</font> and <font weight='bold'>LCD CCFL Wide Gamut</font> are older backlight technologies commonly used in displays from 2009 and earlier.
-"*info.display_tech.linklabel.displayspecifications.com": |-
-  Find your monitor/TV and corresponding technology at displayspecifications.com
-"*info.display_tech.linklabel.everymac.com": |-
-  Find your iMac/MacBook/iPad and corresponding display technology at everymac.com
+"info.display_tech.linklabel.displayspecifications.com": |-
+  請在 displayspecifications.com 尋找你的顯示器/電視及其所採用的技術
+"info.display_tech.linklabel.everymac.com": |-
+  請於 everymac.com 尋找你的 iMac/MacBook/iPad 及其所採用的顯示技術
 "info.display_tech.show": |-
   顯示關於常見題示器技術的資訊
 "info.mr_settings": |-
@@ -1507,14 +1507,14 @@
   只安裝給目前的使用者
 "instrument": |-
   測量儀器
-"*instrument.calibrate": |-
-  Place light-tight cap on the instrument (if applicable), or place on a dark, matte surface, or onto its calibration reference (if applicable), and press OK to self-calibrate the instrument.
+"instrument.calibrate": |-
+  請在測量儀器裝上防漏光蓋掩（如有），或將其放置在黑色不反光的表面上，或者放在校正參考表面上（如有），然後按確認開始測量儀器的自我校正。
 "instrument.calibrate.colormunki": |-
   設定 ColorMunki 感度器到校正位置然後按 OK 以校正測量儀器。
 "instrument.calibrate.reflective": |-
   將儀器放置在它的序號 %s 反光白色參考表面上然後按 OK 以校正儀器。
-"*instrument.calibrate.spyderx": |-
-  Place light-tight cap on the instrument, or place on a dark, matte surface, and press OK to self-calibrate the instrument.
+"instrument.calibrate.spyderx": |-
+  請在測量儀器裝上防漏光蓋掩，或將其放置在黑色不反光的表面上，然後按確認開始測量儀器的自我校正。
 "instrument.calibrating": |-
   正在校正測量儀器...
 "*instrument.colormunki": |-
@@ -1587,8 +1587,8 @@
   在注冊表中未能找到 madVR DirectShow 過濾器。請確認已安裝。
 "madvr.outdated": |-
   現正使用的 madVR 版本已非常陳舊。 請更新到最新版本 (最好為 %i.%i.%i.%i 或以上)。
-"*madvr.wrong_levels_detected": |-
-  The measured luminance difference between RGB level 0 and 16 is below 0.02 cd/m². Either the display device's input- and/or black level setting is incorrect, and/or the output levels configuration of the graphics card and/or madVR is wrong — if your graphics card driver is set to output full range RGB (0-255), please change madVR's output levels for your display device to TV levels (16-235).
+"madvr.wrong_levels_detected": |-
+  測量到 RGB 水平 0 至 16 之間的亮度差距少於 0.02 cd/m²。有可能你的顯示裝置輸入及/或黑位水平設定不正確，及/或顯示卡驅動程式的輸出水平設定不正確及/或 madVR 不正確 — 如你的顯示卡驅動程式設定為全範圍 RGB (0-255)，請將顯示裝置的 madVR 輸出水平設定為電視水平 (16-235)。
 "magenta": |-
   洋紅
 "make_and_model": |-
@@ -2153,8 +2153,8 @@
   來自 %s 的無效回應： 機碼的數值 “%s” 並不符合預期的數值 “%s”：%s
 "restore_defaults": |-
   還原到預設值
-"*retry": |-
-  Retry
+"retry": |-
+  重試
 "rgb.trc": |-
   RGB 傳遞函數
 "rgb.trc.averaged": |-
@@ -2182,7 +2182,7 @@
 "self_check_report": |-
   自我檢查報告...
 "serial_number": |-
-  序列號
+  序號
 "set_as_default": |-
   設定為預設
 "setting.keep_current": |-
@@ -2644,7 +2644,7 @@
 "working_dir": |-
   工作資料夾：
 "*xyz_scaling": |-
-  XYZ scaling (“wrong von Kries”)
+  XYZ 縮放 (“wrong von Kries”)
 "yellow": |-
   黃色
 "yellow_lab": |-
