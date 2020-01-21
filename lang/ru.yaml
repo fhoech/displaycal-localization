@@ -59,7 +59,7 @@
 "3dlut.format.cube": |-
   IRIDAS (.cube)
 "*3dlut.format.dcl": |-
-  LG OLED (.dcl)
+  DeviceControl (.dcl)
 "3dlut.format.eeColor": |-
   eeColor Processor (.txt)
 "3dlut.format.icc": |-
@@ -100,6 +100,8 @@
   Установка 3D LUT успешна!
 "3dlut.install.unsupported": |-
   Установка 3D LUT не поддерживается для выбранного формата 3D LUT.
+"*3dlut.madvr.colorspace.unsupported": |-
+  The source colorspace %s with the primary chromaticity xy coordinates red %.4f %.4f, green %.4f %.4f, blue %.4f %.4f is not supported by madVR for automatic installation. Please assign the 3D LUT manually in madVR.
 "3dlut.save_as": |-
   Сохраните 3D LUT как ...
 "3dlut.settings": |-
@@ -257,6 +259,8 @@
   Ошибка удаления драйверов устройств ArgyllCMS.
 "argyll.instrument.drivers.uninstall.success": |-
   Удаление драйверов устройств ArgyllCMS завершено.
+"*argyll.malformed_ccxx": |-
+  ArgyllCMS cannot function as long as malformed colorimeter correction files are present. They will be automatically moved to the trash.
 "argyll.util.not_found": |-
   Не найдено исполняемый файл ArgyllCMS “%s”!
 "as_measured": |-
@@ -882,6 +886,12 @@
   Дисплей и инструмент
 "display.connection.type": |-
   Соединение
+"*display.levels_issue_detected": |-
+  The measured luminance difference between RGB level 0 and 16 is below 0.02 cd/m², indicating clipping. Likely either the display device's input- and/or black level setting is incorrect, and/or the output levels configuration of the graphics driver is wrong.
+  
+  If your display device has a setting for input levels, please set it to full range RGB (0-255). If your display device doesn't have such a setting, set your graphics driver to output limited range (16-235) instead. Select “Retry” after making either change.
+  
+  If neither your display nor graphics driver has a range setting, you can also fix the output levels using the video card gamma table by clicking “Continue”, but note that this is the least preferable solution.
 "display.manufacturer": |-
   Отображение производителя устройства
 "display.output": |-
@@ -1100,6 +1110,8 @@
   Измеренная максимальная яркость была недействительной. Убедитесь, что датчик прибора не закрыт, и удалите защитный колпачок (если он есть).
 "error.luminance.not_monotonically_increasing": |-
   Измеренная реакция яркости очень неравномерная (неисправность устройства или прибора). Невозможно создать кривые тональных откликов.
+"*error.malformed_cgats": |-
+  The %s file “%s” is malformed.
 "error.measurement.file_invalid": |-
   Файл измерения „%s“ недействителен.
 "error.measurement.file_missing": |-
@@ -1122,6 +1134,8 @@
   Не создан профиль.
 "error.source_dest_same": |-
   Профиль источника и назначения одинаковые.
+"*error.spyderx.black_cal_offsets_too_high": |-
+  The instrument self-calibration offsets are too high. Make sure no light shines on the sensor during instrument self-calibration (put the cap on tightly).
 "error.testchart.creation_failed": |-
   Не удалось создать файл тестирования “%s”. Возможно, существуют ограничения доступа, или выходной файл не существует.
 "error.testchart.invalid": |-
@@ -1223,6 +1237,8 @@
   Устройство для записи киноплёнок
 "finish": |-
   Завершить
+"*fix_output_levels_using_vcgt": |-
+  Fix output levels using video card gamma table
 "flare": |-
   вспышка
 "flexography": |-
@@ -1472,11 +1488,13 @@
 "instrument": |-
   Инструмент
 "*instrument.calibrate": |-
-  Place light-tight cap on the instrument (if applicable), or place on a dark, matte surface, or onto its calibration reference (if applicable), and press OK to calibrate the instrument.
+  Place light-tight cap on the instrument (if applicable), or place on a dark, matte surface, or onto its calibration reference (if applicable), and press OK to self-calibrate the instrument.
 "instrument.calibrate.colormunki": |-
   Установите датчик ColorMunki в позицию калибровки и нажмите OK для калибровки прибора.
 "instrument.calibrate.reflective": |-
   Установите прибор на его целевую измерительную светоотражающую мишень серийный номер %s и нажмите OK, чтобы откалибровать инструмент.
+"*instrument.calibrate.spyderx": |-
+  Place light-tight cap on the instrument, or place on a dark, matte surface, and press OK to self-calibrate the instrument.
 "instrument.calibrating": |-
   Калибровка инструмента...
 "instrument.colormunki": |-
@@ -2113,6 +2131,8 @@
   Неправильный ответ от %s: Значение ключа“%s” не соответствует ожидаемому значению “%s”: %s
 "restore_defaults": |-
   Восстановить значение по умолчанию
+"*retry": |-
+  Retry
 "rgb.trc": |-
   передаточная функция RGB
 "rgb.trc.averaged": |-
@@ -2139,6 +2159,8 @@
   Выбрать все
 "self_check_report": |-
   Отчет самопроверки...
+"serial_number": |-
+  Cерийный номер
 "set_as_default": |-
   Установить по умолчанию
 "setting.keep_current": |-

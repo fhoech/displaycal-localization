@@ -59,7 +59,7 @@
 "3dlut.format.cube": |-
   IRIDAS (.cube)
 "*3dlut.format.dcl": |-
-  LG OLED (.dcl)
+  DeviceControl (.dcl)
 "3dlut.format.eeColor": |-
   eeColor Processor (.txt)
 "3dlut.format.icc": |-
@@ -100,6 +100,8 @@
   3D LUT erfolgreich installiert!
 "3dlut.install.unsupported": |-
   Das gewählte 3D LUT Format unterstützt keine Installation.
+"3dlut.madvr.colorspace.unsupported": |-
+  Der Quellfarbraum %s mit den xy-Primärfarbkoordinaten Rot %.4f %.4f, Grün %.4f %.4f und Blau %.4f %.4f wird von madVR nicht zur automatischen Installation unterstützt. Bitte weisen Sie die 3D LUT manuell in madVR zu.
 "3dlut.save_as": |-
   3D LUT sichern unter...
 "3dlut.settings": |-
@@ -109,7 +111,7 @@
 "3dlut.tab.enable": |-
   3D-LUT-Reiter aktivieren
 "3dlut.use_abstract_profile": |-
-  Abstraktes (“Look”) Profil
+  Abstraktes („Look“) Profil
 "CMP_Digital_Target-3.cie": |-
   CMP Digital Target 3
 "CMP_Digital_Target-4.cie": |-
@@ -246,7 +248,7 @@
 "argyll.instrument.drivers.install.failure": |-
   Installation der ArgyllCMS Messgeräte-Treiber fehlgeschlagen.
 "argyll.instrument.drivers.install.restart": |-
-  Zur Installation der ArgyllCMS-Messgeräte-Treiber müssen Sie das Erzwingen der Treibersignatur deaktivieren. Dazu muss ein System-Neustart durchgeführt werden. Wählen Sie auf der Seite, die daraufhin erscheint, die Option „Problembehandlung“, dann „Erweiterte Optionen“, „Starteinstellungen“ und schließlich „Neu starten“. Beim Neustart wählen Sie in den Startoptionen „Erzwingen der Treibersignatur deaktivieren“. Nach dem Neustart wählen Sie den Menüpunkt „ArgyllCMS Messgeräte-Treiber installieren...“ erneut, um die Treiber zu installlieren. Falls die Option „Problembehandlung“ nicht angezeigt wird, befolgen Sie den in der DisplayCAL-Dokumentation im Abschnitt “Messgeräte-Installation unter Windows” beschriebenen alternativen Weg, die Treibersignatur-Prüfung zu deaktivieren.
+  Zur Installation der ArgyllCMS-Messgeräte-Treiber müssen Sie das Erzwingen der Treibersignatur deaktivieren. Dazu muss ein System-Neustart durchgeführt werden. Wählen Sie auf der Seite, die daraufhin erscheint, die Option „Problembehandlung“, dann „Erweiterte Optionen“, „Starteinstellungen“ und schließlich „Neu starten“. Beim Neustart wählen Sie in den Startoptionen „Erzwingen der Treibersignatur deaktivieren“. Nach dem Neustart wählen Sie den Menüpunkt „ArgyllCMS Messgeräte-Treiber installieren...“ erneut, um die Treiber zu installlieren. Falls die Option „Problembehandlung“ nicht angezeigt wird, befolgen Sie den in der DisplayCAL-Dokumentation im Abschnitt „Messgeräte-Installation unter Windows“ beschriebenen alternativen Weg, die Treibersignatur-Prüfung zu deaktivieren.
 "argyll.instrument.drivers.uninstall": |-
   ArgyllCMS Messgeräte-Treiber deinstallieren...
 "argyll.instrument.drivers.uninstall.confirm": |-
@@ -257,6 +259,8 @@
   Deinstallation der ArgyllCMS Messgeräte-Treiber fehlgeschlagen.
 "argyll.instrument.drivers.uninstall.success": |-
   Deinstallation der ArgyllCMS Messgeräte-Treiber abgeschlossen.
+"argyll.malformed_ccxx": |-
+  ArgyllCMS funktioniert nicht, solange fehlerhafte Colorimeter-Korrekturen installiert sind. Diese werden automatisch in den Papierkorb verschoben.
 "argyll.util.not_found": |-
   ArgyllCMS „%s“ Hilfsprogramm nicht gefunden!
 "as_measured": |-
@@ -827,13 +831,13 @@
 "dialog.argyll.notfound.choice": |-
   ArgyllCMS, das Farbmanagement-System, das benötigt wird, um DisplayCAL zu verwenden, scheint nicht auf diesem Computer installiert zu sein. Möchten Sie es automatisch herunterladen oder selbst danach suchen?
 "dialog.cal_info": |-
-  Die Kalibrierungsdatei “%s” wird verwendet. Wollen Sie fortfahren?
+  Die Kalibrierungsdatei „%s“ wird verwendet. Wollen Sie fortfahren?
 "dialog.confirm_cancel": |-
   Möchten Sie wirklich abbrechen?
 "dialog.confirm_delete": |-
   Möchten Sie die gewählte(n) Datei(en) wirklich löschen?
 "dialog.confirm_overwrite": |-
-  Die Datei “%s” existiert bereits. Möchten Sie die Datei überschreiben?
+  Die Datei „%s“ existiert bereits. Möchten Sie die Datei überschreiben?
 "dialog.confirm_uninstall": |-
   Möchten Sie die gewählte(n) Datei(en) wirklich deinstallieren?
 "dialog.current_cal_warning": |-
@@ -882,6 +886,12 @@
   Anzeige- & Messgerät
 "display.connection.type": |-
   Anschlusstyp
+"display.levels_issue_detected": |-
+  Der gemessene Leuchtdichte-Unterschied zwischen RGB-Stufe 0 und 16 ist unterhalb 0.02 cd/m, was auf Clipping hindeutet. Wahrscheinlich ist entweder der Eingangsbereich und/oder Schwarzpegel des Anzeigegeräts, und/oder der Ausgangsbereich der Grafikkarte inkorrekt eingestellt.
+  
+  Wenn Ihr Anzeigegerät eine Einstellung für den Eingangsbereich besitzt, stellen Sie diesen bitte auf Vollbereichs-RGB (0-255). Falls Ihr Anzeigegerät keine solche Einstellung bietet, setzen Sie stattdessen den Ausgangsbereich Ihrer Grafikkarte auf begrenztes RGB (16-235). Wählen Sie „Wiederholen“, nachdem Sie die Einstellung geändert haben.
+  
+  Falls weder Ihr Anzeigegerät noch Ihre Grafikkarte eine entsprechende Einstellungmöglichkeit hat, können Sie den begrenzten Ausgangsbereich auch mit Hilfe der Grafikkarten-Gammatabelle festlegen, dies ist aber die am wenigsten empfehlenswerte Methode.
 "display.manufacturer": |-
   Anzeigegerätehersteller
 "display.output": |-
@@ -1072,7 +1082,7 @@
 "error.autostart_user": |-
   Der benutzerspezifische Autostart-Eintrag, um die Kalibrierungskurven bei der Anmeldung zu laden, konnte nicht angelegt werden, weil das benutzerspezifische Autostart-Verzeichnis nicht ermittelt werden konnte.
 "error.cal_extraction": |-
-  Die Kalibrierung konnte nicht aus dem Profil “%s” extrahiert werden.
+  Die Kalibrierung konnte nicht aus dem Profil „%s“ extrahiert werden.
 "error.calibration.file_missing": |-
   Die Kalibrierungsdatei „%s“ fehlt.
 "error.calibration.file_not_created": |-
@@ -1100,6 +1110,8 @@
   Die gemessene Spitzen-Helligkeit war ungültig. Stellen Sie sicher, dass der Messgeräte-Sensor nicht blockiert ist, und nehmen Sie eine eventuell vorhandene Schutzkappe ab.
 "error.luminance.not_monotonically_increasing": |-
   Das gemessene Luminanzverhalten ist hochgradig nicht-monoton (Anzeige- oder Messgeräte-Störung). Tonwertkurven können nicht erzeugt werden.
+"error.malformed_cgats": |-
+  Die %s-Datei „%s“ ist fehlerhaft.
 "error.measurement.file_invalid": |-
   Die Messwertedatei „%s“ ist ungültig.
 "error.measurement.file_missing": |-
@@ -1122,6 +1134,8 @@
   Es wurde keine Profildatei erstellt.
 "error.source_dest_same": |-
   Quell- und Zielprofil sind identisch.
+"error.spyderx.black_cal_offsets_too_high": |-
+  Die Messgerätesensor-Schwarzkalibrierungswerte sind zu hoch. Stellen Sie sicher, dass während der Messgeräte-Eichung kein Licht auf den Sensor fällt (befestigen Sie die Messgeräte-Kappe auf dem Sensor so, dass sie einrastet).
 "error.testchart.creation_failed": |-
   Die Testform „%s“ konnte nicht erstellt werden. Eventuell bestehen keine Zugriffsrechte, oder die Quelldatei ist nicht vorhanden.
 "error.testchart.invalid": |-
@@ -1223,6 +1237,8 @@
   Filmbelichter
 "finish": |-
   Fertigstellen
+"fix_output_levels_using_vcgt": |-
+  Ausgabebereich mit Grafikkarten-Gammatabelle festlegen
 "flare": |-
   Streulicht
 "flexography": |-
@@ -1478,6 +1494,8 @@
   Drehen Sie den ColorMunki-Sensor in die Kalibrierposition und drücken Sie dann OK, um das Messgerät zu eichen.
 "instrument.calibrate.reflective": |-
   Setzen Sie das Messgerät auf die zum Messgerät-Zubehör gehörende Weißkachel mit der Seriennummer %s und drücken Sie dann OK, um das Messgerät zu eichen.
+"instrument.calibrate.spyderx": |-
+  Setzen Sie die lichtdichte Kappe auf den Messgeräte-Sensor, oder setzen Sie das Messgerät auf einen dunklen, nichtreflektierenden Untergrund, und drücken Sie dann OK, um das Messgerät zu eichen.
 "instrument.calibrating": |-
   Messgerätekalibrierung...
 "*instrument.colormunki": |-
@@ -1551,7 +1569,7 @@
 "madvr.outdated": |-
   Die benutzte Version von madVR ist veraltet. Bitte aktualisieren Sie auf die neueste Version (mindestens %i.%i.%i.%i).
 "madvr.wrong_levels_detected": |-
-  Der gemessene Leuchtdichte-Unterschied zwischen RGB-Stufe 0 und 16 ist unterhalb 0.02 cd/m. Entweder die Eingabe-Wertebereich- und/oder Schwarzpegel-Einstellung des Anzeigegeräts, und/oder die Ausgabe-Wertebereich-Einstellung der Grafikkarte und/oder von madVR ist inkorrekt ‒ falls Ihre Grafikkarte Vollbereichs-RGB (0-255) ausgibt, ändern Sie bitte madVRs Ausgabe-Wertebereich für Ihr Anzeigegerät auf TV (16-235).
+  Der gemessene Leuchtdichte-Unterschied zwischen RGB-Stufe 0 und 16 ist unterhalb 0.02 cd/m. Entweder ist der Eingangsbereich- und/oder Schwarzpegel des Anzeigegeräts, und/oder der Ausgabebereich der Grafikkarte und/oder von madVR inkorrekt eingestellt ‒ falls Ihre Grafikkarte Vollbereichs-RGB (0-255) ausgibt, ändern Sie bitte madVRs Ausgabebereich für Ihr Anzeigegerät auf TV (16-235).
 "magenta": |-
   Magenta
 "make_and_model": |-
@@ -2114,6 +2132,8 @@
   Ungültige Antwort von %s: Wert von Schlüssel „%s“ entspricht nicht dem erwarteten Wert „%s“: %s
 "restore_defaults": |-
   Standardeinstellungen wiederherstellen
+"retry": |-
+  Wiederholen
 "rgb.trc": |-
   RGB Übertragungsfunktion
 "rgb.trc.averaged": |-
@@ -2140,6 +2160,8 @@
   Alles auswählen
 "self_check_report": |-
   Selbsttest-Report...
+"serial_number": |-
+  Seriennummer
 "set_as_default": |-
   Als Standard setzen
 "setting.keep_current": |-
@@ -2561,7 +2583,7 @@
   ΔC*00 RGB-XYZ: ΔC*00 der Messwerte zum sRGB-Äquivalent der RGB-Werte.
   ΔH*00 RGB-XYZ: ΔH*00 der Messwerte zum sRGB-Äquivalent der RGB-Werte.
 "warning.system_file": |-
-  Warnung: “%s” ist eine Systemdatei. Möchten Sie wirklich fortfahren?
+  Warnung: „%s“ ist eine Systemdatei. Möchten Sie wirklich fortfahren?
 "webserver.waiting": |-
   Webserver wartet unter
 "welcome": |-

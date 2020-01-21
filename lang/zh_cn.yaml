@@ -59,7 +59,7 @@
 "*3dlut.format.cube": |-
   IRIDAS (.cube)
 "*3dlut.format.dcl": |-
-  LG OLED (.dcl)
+  DeviceControl (.dcl)
 "*3dlut.format.eeColor": |-
   eeColor Processor (.txt)
 "3dlut.format.icc": |-
@@ -100,6 +100,8 @@
   3D LUT 安装成功！
 "3dlut.install.unsupported": |-
   3D LUT 安装不支持所选的 3D LUT 格式。
+"*3dlut.madvr.colorspace.unsupported": |-
+  The source colorspace %s with the primary chromaticity xy coordinates red %.4f %.4f, green %.4f %.4f, blue %.4f %.4f is not supported by madVR for automatic installation. Please assign the 3D LUT manually in madVR.
 "3dlut.save_as": |-
   保存 3D LUT 为...
 "3dlut.settings": |-
@@ -257,6 +259,8 @@
   卸载 ArgyllCMS 校色仪驱动程序失败。
 "argyll.instrument.drivers.uninstall.success": |-
   卸载 ArgyllCMS 校色仪驱动程序完成。
+"*argyll.malformed_ccxx": |-
+  ArgyllCMS cannot function as long as malformed colorimeter correction files are present. They will be automatically moved to the trash.
 "argyll.util.not_found": |-
   ArgyllCMS “%s” 可执行文件未找到！
 "as_measured": |-
@@ -882,6 +886,12 @@
   显示器 & 校色仪
 "display.connection.type": |-
   连接
+"*display.levels_issue_detected": |-
+  The measured luminance difference between RGB level 0 and 16 is below 0.02 cd/m², indicating clipping. Likely either the display device's input- and/or black level setting is incorrect, and/or the output levels configuration of the graphics driver is wrong.
+  
+  If your display device has a setting for input levels, please set it to full range RGB (0-255). If your display device doesn't have such a setting, set your graphics driver to output limited range (16-235) instead. Select “Retry” after making either change.
+  
+  If neither your display nor graphics driver has a range setting, you can also fix the output levels using the video card gamma table by clicking “Continue”, but note that this is the least preferable solution.
 "display.manufacturer": |-
   显示设备制造商
 "display.output": |-
@@ -1102,6 +1112,8 @@
   测量的峰值光亮度无效。确认校色仪传感器未被遮挡，并取下保护盖（如果有）。
 "error.luminance.not_monotonically_increasing": |-
   测量的光亮度响应为极高的非-单调性 (设备或校色仪故障)。不能生成色调响应曲线。
+"*error.malformed_cgats": |-
+  The %s file “%s” is malformed.
 "error.measurement.file_invalid": |-
   测量文件 „%s“ 无效。
 "error.measurement.file_missing": |-
@@ -1124,6 +1136,8 @@
   配置文件未创建。
 "error.source_dest_same": |-
   源和目标配置文件相同。
+"*error.spyderx.black_cal_offsets_too_high": |-
+  The instrument self-calibration offsets are too high. Make sure no light shines on the sensor during instrument self-calibration (put the cap on tightly).
 "error.testchart.creation_failed": |-
   测试图表文件 “%s” 不能创建。可能存在访问限制，或源文件不存在。
 "error.testchart.invalid": |-
@@ -1225,6 +1239,8 @@
   胶片写入仪
 "finish": |-
   完成
+"*fix_output_levels_using_vcgt": |-
+  Fix output levels using video card gamma table
 "flare": |-
   闪光
 "flexography": |-
@@ -1494,6 +1510,8 @@
   将 ColorMunki 传感器放在校准位置并按“确定”校准校色仪。
 "instrument.calibrate.reflective": |-
   将校色仪放在其反射白色参考序列号 no. %s 上并按“确定”校准校色仪。
+"instrument.calibrate.spyderx": |-
+  将不透光的盖子放在校色仪上，或放在黑暗的无光泽表面上，并按“确定”校准校色仪。
 "instrument.calibrating": |-
   正在校准校色仪...
 "instrument.colormunki": |-
@@ -2130,6 +2148,8 @@
   无效响应自 %s: 密钥值 “%s” 不匹配预期值 “%s”: %s
 "restore_defaults": |-
   恢复默认值
+"*retry": |-
+  Retry
 "rgb.trc": |-
   RGB 传递函数
 "rgb.trc.averaged": |-
@@ -2156,6 +2176,8 @@
   全选
 "self_check_report": |-
   自检报告...
+"serial_number": |-
+  序列号
 "set_as_default": |-
   设为默认值
 "setting.keep_current": |-
