@@ -1177,9 +1177,9 @@
 "*ffp_insertion": |-
   Full field pattern insertion
 "*file.hash.malformed": |-
-  The integrity of %s cannot be verified because the checksum file is malformed.
+  因校驗檔不正常而無法驗證 %s 的完整性。
 "*file.hash.missing": |-
-  The integrity of %s cannot be verified because it doesn't have an entry in the checksum file.
+  因校驗檔中並沒有 %s 的相關記錄而無法驗證其完整性。
 "file.hash.verification.fail": |-
   %s 的校驗碼驗證失敗:
   
@@ -1231,8 +1231,8 @@
   測量檔案 (*.ti3)
 "filetype.tif": |-
   標籤圖檔格式 (*.tif)
-"*filetype.txt": |-
-  DeviceCorrections.txt
+"filetype.txt": |-
+  裝置修正.txt
 "filetype.vrml": |-
   VRML 檔案 (*.wrl)
 "filetype.x3d": |-
@@ -1247,8 +1247,8 @@
   完成
 "fix_output_levels_using_vcgt": |-
   以顯示卡伽瑪表修正輸出水平
-"*flare": |-
-  Flare
+"flare": |-
+  耀光
 "flexography": |-
   柔印
 "*focal_plane_colorimetry_estimates": |-
@@ -1348,8 +1348,8 @@
   去到 %s
 "go_to_website": |-
   瀏覽網站
-"*gravure": |-
-  Gravure
+"gravure": |-
+  凹版印刷
 "gray_tone_response_curve": |-
   灰色調響應曲線
 "grayscale": |-
@@ -1461,10 +1461,10 @@
   <font weight='bold'>LCD RGB LED</font> has a wide color gamut with near-full Adobe RGB coverage. Common displays in this category include Samsung XL20/XL24/XL30 and HP DreamColor LP2480zx.
   
   <font weight='bold'>LCD CCFL</font> and <font weight='bold'>LCD CCFL Wide Gamut</font> are older backlight technologies commonly used in displays from 2009 and earlier.
-"*info.display_tech.linklabel.displayspecifications.com": |-
-  Find your monitor/TV and corresponding technology at displayspecifications.com
-"*info.display_tech.linklabel.everymac.com": |-
-  Find your iMac/MacBook/iPad and corresponding display technology at everymac.com
+"info.display_tech.linklabel.displayspecifications.com": |-
+  請在 displayspecifications.com 尋找你的顯示器/電視及其所採用的技術
+"info.display_tech.linklabel.everymac.com": |-
+  請於 everymac.com 尋找你的 iMac/MacBook/iPad 及其所採用的顯示技術
 "info.display_tech.show": |-
   顯示關於常見題示器技術的資訊
 "info.mr_settings": |-
@@ -1508,13 +1508,13 @@
 "instrument": |-
   測量儀器
 "instrument.calibrate": |-
-  請在測量儀器上裝上防漏光蓋掩（如有），或將其放置在黑色不反光的表面上，或者放在校正參考表面上（如有），然後按確認開始測量儀器的自我校正。
+  請在測量儀器裝上防漏光蓋掩（如有），或將其放置在黑色不反光的表面上，或者放在校正參考表面上（如有），然後按確認開始測量儀器的自我校正。
 "instrument.calibrate.colormunki": |-
   設定 ColorMunki 感度器到校正位置然後按 OK 以校正測量儀器。
 "instrument.calibrate.reflective": |-
   將儀器放置在它的序號 %s 反光白色參考表面上然後按 OK 以校正儀器。
-"*instrument.calibrate.spyderx": |-
-  Place light-tight cap on the instrument, or place on a dark, matte surface, and press OK to self-calibrate the instrument.
+"instrument.calibrate.spyderx": |-
+  請在測量儀器裝上防漏光蓋掩，或將其放置在黑色不反光的表面上，然後按確認開始測量儀器的自我校正。
 "instrument.calibrating": |-
   正在校正測量儀器...
 "*instrument.colormunki": |-
@@ -2644,7 +2644,7 @@
 "working_dir": |-
   工作資料夾：
 "*xyz_scaling": |-
-  XYZ scaling (“wrong von Kries”)
+  XYZ 縮放 (“wrong von Kries”)
 "yellow": |-
   黃色
 "yellow_lab": |-
