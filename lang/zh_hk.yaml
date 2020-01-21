@@ -690,8 +690,8 @@
   已找到以下用於所選顯示器及儀器的色度計修正：
 "colorimeter_correction.web_check.failure": |-
   找不到用於所選顯示器及儀器的色度計修正。
-"*colorimeter_correction.web_check.info": |-
-  Please note that all colorimeter corrections have been contributed by various users, and their usefulness to your particular situation is up to you to evaluate. They may or may not improve the absolute accuracy of your colorimeter with your display.
+"colorimeter_correction.web_check.info": |-
+  請注意所有色度計的修正為不同用戶所提供，閣下需根據你的情況自行判斷其有用性。其可能會或可能不會增強色度計對於你的顯示器之絕對精準度。
 "colorimeter_correction_matrix_file": |-
   修正
 "colorimeter_correction_matrix_file.choose": |-
@@ -891,7 +891,7 @@
 "display.levels_issue_detected": |-
   測量到 RGB 水平 0 至 16 之間的亮度差距少於 0.02 cd/m²，顯示有可能出現裁斷。有可能你的顯示裝置輸入及/或黑位水平設定不正確，及/或顯示卡驅動程式的輸出水平設定不正確。
   
-  如你的顯示裝置有輸入水平設定的話，請將其設定為全域 RGB (0-255)。如你的顯示裝置沒有相關的設的，請設定你的顯示卡驅動程式的輸出水平設定為有限範圍 (16-255)。在進行相關設定後選取 “重試”。
+  如你的顯示裝置有輸入水平設定的話，請將其設定為全範圍 RGB (0-255)。如你的顯示裝置沒有相關的設的，請設定你的顯示卡驅動程式的輸出水平設定為有限範圍 (16-255)。在進行相關設定後選取 “重試”。
   
   如你的顯示裝置或顯示卡驅動程式都沒有輸出水平可以的設定，你可以選取 “繼續” 以顯示卡的伽瑪表進行修正，但要注意這是最不建議的解決方法。
 "display.manufacturer": |-
@@ -1336,8 +1336,8 @@
   PCS-至-裝置
 "gamut_mapping.mode.inverse_a2b": |-
   反向 裝置-至-PCS
-"*gamut_plot.tooltip": |-
-  Click and drag the mouse inside the plot to move the viewport, or zoom with the mouse wheel and +/- keys. Double-click resets the viewport.
+"gamut_plot.tooltip": |-
+  在圖表上點擊及拖動滑鼠以移動視角，或可用滑鼠滾輪和 +/- 鍵放大縮小。雙按可重新設定為預設視角。
 "generic_name_value_data": |-
   一般名稱值數據
 "geometry": |-
@@ -1587,8 +1587,8 @@
   在注冊表中未能找到 madVR DirectShow 過濾器。請確認已安裝。
 "madvr.outdated": |-
   現正使用的 madVR 版本已非常陳舊。 請更新到最新版本 (最好為 %i.%i.%i.%i 或以上)。
-"*madvr.wrong_levels_detected": |-
-  The measured luminance difference between RGB level 0 and 16 is below 0.02 cd/m². Either the display device's input- and/or black level setting is incorrect, and/or the output levels configuration of the graphics card and/or madVR is wrong — if your graphics card driver is set to output full range RGB (0-255), please change madVR's output levels for your display device to TV levels (16-235).
+"madvr.wrong_levels_detected": |-
+  測量到 RGB 水平 0 至 16 之間的亮度差距少於 0.02 cd/m²。有可能你的顯示裝置輸入及/或黑位水平設定不正確，及/或顯示卡驅動程式的輸出水平設定不正確及/或 madVR 不正確 — 如你的顯示卡驅動程式設定為全範圍 RGB (0-255)，請將顯示裝置的 madVR 輸出水平設定為電視水平 (16-235)。
 "magenta": |-
   洋紅
 "make_and_model": |-
